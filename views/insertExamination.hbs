@@ -1,0 +1,28 @@
+<h1>Insert Examination</h1>
+<form name="Examination" method="post" action="/">
+    <div>
+        <label for="Examination_number">Examination_number</label>
+        <input id="Examination_number" name="Examination_number" type="text" required placeholder="Examination_number" />
+    </div>
+    <div>
+        <label for="Examination_Date_Time">Examination_Date_Time</label>
+        <input id="Examination_Date_Time" name="Examination_Date_Time" type="text" 
+        required placeholder="2023-00-00 00:00:00" />
+    </div>
+    <div>
+        <label for="Examination_Details">Examination_Details</label>
+        <input id="Examination_Details" name="Examination_Details" type="text" required placeholder="Examination_Details" />
+    </div>
+    <div>
+        <label for="Doctor_Doctor_ID">Doctor_Doctor_ID</label>
+        <input id="Doctor_Doctor_ID" name="Doctor_Doctor_ID" type="text" placeholder="Doctor_Doctor_ID" />
+    </div>
+    <div>
+        <label for="Patient_Patient_ID">Patient_Patient_ID</label>
+        <input id="Patient_Patient_ID" name="Patient_Patient_ID" type="text" 
+        required placeholder="Patient_Patient_ID" />
+    </div>
+    <div>
+        <input type="submit" value="insert" formaction="/EmployeeDoc/insertExamination" />
+    </div>
+</form>

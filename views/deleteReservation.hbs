@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Patient_Patient_ID</td>
+    <td>Reservation_number</td>
+  </tr>
+  {{#each Reservation_res}}
+    <form method="post">
+      <tr>
+        <td>{{Patient_Patient_ID}}</td>
+        <td>{{Reservation_number}}</td>
+        <td style="border: none; margin-left: 10px;">
+          <button 
+            style="margin-left: 10px;" 
+            name='delBtn' 
+            type="submit" 
+            value="{{Reservation_number}}" 
+            formaction="/AccessPat/deleteReservation"
+          >
+          delete
+          </button>
+        </td>
+      </tr>    
+    </form>
+  {{/each}}
+</table>
+

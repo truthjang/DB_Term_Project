@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Examination_Details</td>
+    <td>Examination_number</td>
+  </tr>
+  {{#each Examination_res}}
+    <form method="post">
+      <tr>
+        <td>{{Examination_Details}}</td>
+        <td>{{Examination_number}}</td>
+        <td style="border: none; margin-left: 10px;">
+          <button 
+            style="margin-left: 10px;" 
+            name='delBtn' 
+            type="submit" 
+            value="{{Examination_number}}" 
+            formaction="/EmployeeDoc/deleteExamination"
+          >
+          delete
+          </button>
+        </td>
+      </tr>    
+    </form>
+  {{/each}}
+</table>
+

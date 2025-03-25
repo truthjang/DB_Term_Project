@@ -1,0 +1,58 @@
+{{!--
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Patient_ID</td>
+    <td>Name</td>
+    <td>SSN</td>
+    <td>Password</td>
+    <td>Address</td>
+    <td>Gender</td>
+    <td>Blood_Type</td>
+    <td>Height</td>
+    <td>Weight</td>
+    <td>Phone_number</td>
+    <td>Doctor_Doctor_ID</td>
+    <td>Nurse_Nurse_ID</td>
+  </tr>
+  {{#each Patient}}
+  <tr>
+    <td>{{Patient_ID}}</td>
+    <td>{{Name}}</td>
+    <td>{{SSN}}</td>
+    <td>{{Password}}</td>
+    <td>{{Address}}</td>
+    <td>{{Gender}}</td>
+    <td>{{Blood_Type}}</td>
+    <td>{{Height}}</td>
+    <td>{{Weight}}</td>
+    <td>{{Phone_number}}</td>
+    <td>{{Doctor_Doctor_ID}}</td>
+    <td>{{Nurse_Nurse_ID}}</td>
+  </tr>
+  {{/each}}
+</table>
+--}}
+
+<h1>{{ title2 }}</h1>
+
+<table>
+  <tr>
+    <td>Treatment_number</td>
+    <td>Treatment_Date_Time</td>
+    <td>Treatment_Details</td>
+    <td>Nurse_Nurse_ID</td>
+    <td>Patient_Patient_ID</td>
+  </tr>
+  {{#each Treatment}}
+  <tr>
+    <td>{{Treatment_number}}</td>
+    <td>{{Treatment_Date_Time}}</td>
+    <td>{{Treatment_Details}}</td>
+    <td>{{Nurse_Nurse_ID}}</td>
+    <td>{{Patient_Patient_ID}}</td>
+  </tr>
+  {{/each}}
+</table>
+

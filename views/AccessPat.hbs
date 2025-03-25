@@ -1,0 +1,18 @@
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Reservation_number</td>
+    <td>Reservation_Date_Time</td>
+    <td>Medical_Specialty_Department_ID</td>
+    <td>Patient_Patient_ID</td>
+  </tr>
+  {{#each Reservation}}
+  <tr>
+    <td>{{Reservation_number}}</td>
+    <td>{{Reservation_Date_Time}}</td>
+    <td>{{Medical_Specialty_Department_ID}}</td>
+    <td>{{Patient_Patient_ID}}</td>
+  </tr>
+  {{/each}}
+</table>

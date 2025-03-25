@@ -1,0 +1,24 @@
+<h1>{{main_title}}</h1>
+<table>
+    <tr>
+        <td>Examination_number</td>
+        <td>Examination_Date_Time</td>
+        <td>Examination_Details</td>
+        <td>Doctor_Doctor_ID</td>
+        <td>Patient_Patient_ID</td>
+    </tr>
+    {{#each Examination_res}}
+    <form method="post">
+        <tr>
+            <td>{{Examination_number}}</td>
+            <td style="display: none"><input type="text" name="Examination_number" value={{Examination_number}}></td> 
+            <td><input type="text" name="Examination_Date_Time" value="{{Examination_Date_Time}}"></td> 
+            <td><input type="text" name="Examination_Details" value="{{Examination_Details}}"></td> 
+            <td><input type="text" name="Doctor_Doctor_ID" value={{Doctor_Doctor_ID}}></td> 
+            <td><input type="text" name="Patient_Patient_ID" value={{Patient_Patient_ID}}></td> 
+            <td><input type="submit" value="Modify" formaction="/EmployeeDoc/updateExamination"></td>
+        </tr>
+    </form>
+    {{/each}}
+</table>
+

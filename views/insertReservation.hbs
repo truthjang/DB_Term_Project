@@ -1,0 +1,25 @@
+<h1>Insert Reservation</h1>
+<form name="Reservation" method="post" action="/">
+    <div>
+        <label for="Reservation_number">Reservation_number</label>
+        <input id="Reservation_number" name="Reservation_number" type="text" required placeholder="Reservation_number" />
+    </div>
+    <div>
+        <label for="Reservation_Date_Time">Reservation_Date_Time</label>
+        <input id="Reservation_Date_Time" name="Reservation_Date_Time" type="text" 
+        required placeholder="2023-00-00 00:00:00" />
+    </div>
+    <div>
+        <label for="Medical_Specialty_Department_ID">Medical_Specialty_Department_ID</label>
+        <input id="Medical_Specialty_Department_ID" name="Medical_Specialty_Department_ID" type="text" required placeholder="Medical_Specialty_Department_ID" />
+    </div>
+    <div>
+        <label for="Patient_Patient_ID">Patient_Patient_ID</label>
+        <input id="Patient_Patient_ID" name="Patient_Patient_ID" type="text" 
+        required placeholder="Patient_Patient_ID" />
+    </div>
+    <div>
+        <input type="submit" value="insert" formaction="/AccessPat/insertReservation" />
+    </div>
+</form>
+

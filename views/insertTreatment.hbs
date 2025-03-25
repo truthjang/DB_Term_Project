@@ -1,0 +1,29 @@
+<h1>Insert Treatment</h1>
+<form name="Treatment" method="post" action="/">
+    <div>
+        <label for="Treatment_number">Treatment_number</label>
+        <input id="Treatment_number" name="Treatment_number" type="text" required placeholder="Treatment_number" />
+    </div>
+    <div>
+        <label for="Treatment_Date_Time">Treatment_Date_Time</label>
+        <input id="Treatment_Date_Time" name="Treatment_Date_Time" type="text" 
+        required placeholder="2023-00-00 00:00:00" />
+    </div>
+    <div>
+        <label for="Treatment_Details">Treatment_Details</label>
+        <input id="Treatment_Details" name="Treatment_Details" type="text" required placeholder="Treatment_Details" />
+    </div>
+    <div>
+        <label for="Nurse_Nurse_ID">Nurse_Nurse_ID</label>
+        <input id="Nurse_Nurse_ID" name="Nurse_Nurse_ID" type="text" placeholder="Nurse_Nurse_ID" />
+    </div>
+    <div>
+        <label for="Patient_Patient_ID">Patient_Patient_ID</label>
+        <input id="Patient_Patient_ID" name="Patient_Patient_ID" type="text" 
+        required placeholder="Patient_Patient_ID" />
+    </div>
+    <div>
+        <input type="submit" value="insert" formaction="/EmployeeNur/insertTreatment" />
+    </div>
+</form>
+

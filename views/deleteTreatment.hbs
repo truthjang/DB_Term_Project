@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Treatment_Details</td>
+    <td>Treatment_number</td>
+  </tr>
+  {{#each Treatment_res}}
+    <form method="post">
+      <tr>
+        <td>{{Treatment_Details}}</td>
+        <td>{{Treatment_number}}</td>
+        <td style="border: none; margin-left: 10px;">
+          <button 
+            style="margin-left: 10px;" 
+            name='delBtn' 
+            type="submit" 
+            value="{{Treatment_number}}" 
+            formaction="/EmployeeNur/deleteTreatment"
+          >
+          delete
+          </button>
+        </td>
+      </tr>    
+    </form>
+  {{/each}}
+</table>
+

@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Nurse_ID</td>
+  </tr>
+  {{#each Nurse_res}}
+    <form method="post">
+      <tr>
+        <td>{{Name}}</td>
+        <td>{{Nurse_ID}}</td>
+        <td style="border: none; margin-left: 10px;">
+          <button 
+            style="margin-left: 10px;" 
+            name='delBtn' 
+            type="submit" 
+            value="{{Nurse_ID}}" 
+            formaction="/admin/deleteNurse"
+          >
+          delete
+          </button>
+        </td>
+      </tr>    
+    </form>
+  {{/each}}
+</table>
+

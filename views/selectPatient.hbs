@@ -1,0 +1,45 @@
+<h1>select Patient</h1>
+<form name="Doctor_Doctor_ID" method="post" action="/">
+    <div>
+        <label for="Doctor_Doctor_ID">Doctor_Doctor_ID</label>
+        <input id="Doctor_Doctor_ID" name="Doctor_Doctor_ID" type="text" required placeholder="Must start with 1" />
+    </div>
+    <div>
+        <input type="submit" value="select" formaction="/EmployeeDoc/selectPatient" />
+    </div>
+</form>
+
+<h1>{{ title2 }}</h1>
+
+<table>
+  <tr>
+    <td>Patient_ID</td>
+    <td>Name</td>
+    <td>SSN</td>
+    <td>Password</td>
+    <td>Address</td>
+    <td>Gender</td>
+    <td>Blood_Type</td>
+    <td>Height</td>
+    <td>Weight</td>
+    <td>Phone_number</td>
+    <td>Doctor_Doctor_ID</td>
+    <td>Nurse_Nurse_ID</td>
+  </tr>
+  {{#each selPatient}}
+  <tr>
+    <td>{{Patient_ID}}</td>
+    <td>{{Name}}</td>
+    <td>{{SSN}}</td>
+    <td>{{Password}}</td>
+    <td>{{Address}}</td>
+    <td>{{Gender}}</td>
+    <td>{{Blood_Type}}</td>
+    <td>{{Height}}</td>
+    <td>{{Weight}}</td>
+    <td>{{Phone_number}}</td>
+    <td>{{Doctor_Doctor_ID}}</td>
+    <td>{{Nurse_Nurse_ID}}</td>
+  </tr>
+  {{/each}}
+</table>

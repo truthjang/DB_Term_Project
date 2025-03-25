@@ -1,0 +1,24 @@
+<h1>{{main_title}}</h1>
+<table>
+    <tr>
+        <td>Treatment_number</td>
+        <td>Treatment_Date_Time</td>
+        <td>Treatment_Details</td>
+        <td>Nurse_Nurse_ID</td>
+        <td>Patient_Patient_ID</td>
+    </tr>
+    {{#each Treatment_res}}
+    <form method="post">
+        <tr>
+            <td>{{Treatment_number}}</td>
+            <td style="display: none"><input type="text" name="Treatment_number" value={{Treatment_number}}></td> 
+            <td><input type="text" name="Treatment_Date_Time" value="{{Treatment_Date_Time}}"></td> 
+            <td><input type="text" name="Treatment_Details" value="{{Treatment_Details}}"></td> 
+            <td><input type="text" name="Nurse_Nurse_ID" value={{Nurse_Nurse_ID}}></td> 
+            <td><input type="text" name="Patient_Patient_ID" value={{Patient_Patient_ID}}></td> 
+            <td><input type="submit" value="Modify" formaction="/EmployeeNur/updateTreatment"></td>
+        </tr>
+    </form>
+    {{/each}}
+</table>
+

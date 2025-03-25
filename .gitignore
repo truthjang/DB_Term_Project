@@ -1,0 +1,12 @@
+# Node.js 의존성 폴더 제외
+node_modules/
+
+# VSCode 설정 파일 제외
+.vscode/
+
+# Windows 임시 파일 제외
+Thumbs.db
+Desktop.ini
+
+# Mac의 DS_Store 파일 제외
+.DS_Store

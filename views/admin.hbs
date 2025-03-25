@@ -1,0 +1,45 @@
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Doctor_ID</td>
+    <td>Password</td>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Phone_number</td>
+    <td>Medical_Specialty_Department_ID</td>
+  </tr>
+  {{#each Doctor}}
+  <tr>
+    <td>{{Doctor_ID}}</td>
+    <td>{{Password}}</td>
+    <td>{{Name}}</td>
+    <td>{{Address}}</td>
+    <td>{{Phone_number}}</td>
+    <td>{{Medical_Specialty_Department_ID}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+<h1>{{ title2 }}</h1>
+
+<table>
+  <tr>
+    <td>Nurse_ID</td>
+    <td>Password</td>
+    <td>Name</td>
+    <td>Address</td>
+    <td>Phone_number</td>
+    <td>Medical_Specialty_Department_ID</td>
+  </tr>
+  {{#each Nurse}}
+  <tr>
+    <td>{{Nurse_ID}}</td>
+    <td>{{Password}}</td>
+    <td>{{Name}}</td>
+    <td>{{Address}}</td>
+    <td>{{Phone_number}}</td>
+    <td>{{Medical_Specialty_Department_ID}}</td>
+  </tr>
+  {{/each}}
+</table>
